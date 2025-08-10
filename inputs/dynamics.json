@@ -1,0 +1,14 @@
+{
+  "company_overview": "AI fraud detection for real-time payments.",
+  "team": "Ex-PayPal, ex-Microsoft. 2nd-time founders.",
+  "technology": "Graph neural networks + streaming feature store.",
+  "opportunity": "PSD2, FedNow, UPI growth; fraud losses rising.",
+  "risks": "Bank integrations; model drift; regulatory change.",
+  "thesis": "AI apps | Cybersecurity | DataOps",
+  "deal_lead": "Michelle",
+  "series": "Series A",
+  "valuation": 100000000,
+  "pre_money": 90000000,
+  "proposed_m12_check": 8000000,
+  "fdo_percent": 13.0
+}
