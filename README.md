@@ -1,6 +1,27 @@
 # VentureSynapseX — PoC (Semantic Kernel, Python)
 
-A minimal multi-agent proof of concept for an AI-first corporate VC workflow using **Semantic Kernel**.
+## Introduction
+VentureSynapseX is a proof-of-concept multi-agent system built with **Semantic Kernel** and an **LLM core** for an AI-first corporate VC workflow to reimagine how M12 — Microsoft’s Venture Fund — discovers, evaluates, and decides on investments.  
+In the fast-moving world of venture capital, speed, accuracy, and fairness are competitive weapons. This project demonstrates how an AI-driven, bias-aware pipeline can compress weeks of manual diligence into hours, while surfacing overlooked, high-potential deals from global markets.
+
+## Description
+This PoC uses a **three-agent architecture** to mimic an M12 deal team’s workflow:
+1. **DiscoveryAgent** — Ingests raw artifacts from Dynamics CRM, pitch decks, and analyst research to produce a concise, structured company snapshot.
+2. **ScoringAgent** — Assigns numeric scores for fit, moat, go-to-market strength, risk, Microsoft synergy, and unicorn likelihood, then issues a `GO`, `LEARN_MORE`, or `NO_GO` recommendation with rationale.
+3. **MemoAgent** — Generates an M12-style TL;DR and a compact Go/No-Go slide text, ready to paste into investment memos or presentation decks.
+
+The pipeline integrates directly with:
+- **Dynamics CRM outputs** (`dynamics.json`)
+- **Unstructured artifacts** (pitch deck text, research notes)
+- **LLM reasoning** for bias-free scoring and memo creation
+
+**Why it matters:**  
+- Dramatically accelerates deal throughput without sacrificing diligence quality  
+- Reduces unconscious bias in investment decisions  
+- Creates a living, learning decision engine that strengthens with every deal evaluated  
+- Aligns directly with M12’s thesis areas and Microsoft’s AI-first strategy
+
+This repository contains all code, prompts, and sample inputs to run the PoC locally, along with a modular design so you can extend it for retrieval-augmented generation, slide automation, and guardrails.
 
 ## What it does
 - **DiscoveryAgent** → synthesizes inputs (Dynamics JSON, deck notes, research) into a crisp snapshot.
